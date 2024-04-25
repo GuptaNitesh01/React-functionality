@@ -8,9 +8,19 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="root"></div>
 <script>
-    console.log("React",React)
-    console.log("ReactDom",ReactDOM)
+    // console.log("React",React)
+    // console.log("ReactDom",ReactDOM)
+
+    const root = document.getElementById("root")
+    // const heading1 = React.createElement("h1",{class:"heading1"},"heading1")
+    // const heading2 = React.createElement("h2",{class:"heading2"},"heading2")
+    const container1 = React.createElement("div",{class:"container1"},React.createElement("h1",{class:"heading1"},"heading1"))
+    console.log(container1);         //not necessary in environment 
+    const container2 = React.createElement("div",{class:"container2"},React.createElement("h2",{class:"heading2"},"heading2"))
+    const rootElement = ReactDOM.createRoot(root)
+    rootElement.render([container1,container2])    // converted into html works as render 
 
 </script>
     
