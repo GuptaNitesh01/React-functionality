@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <title>Document</title>
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>     // core library
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  // convertedd into a languauge that browser understand -->
+    <title>React</title> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="root"></div>
-<script>
-    // console.log("React",React)
-    // console.log("ReactDom",ReactDOM)
+    <div id="root">
 
-    const root = document.getElementById("root")
-    // const heading1 = React.createElement("h1",{class:"heading1"},"heading1")
-    // const heading2 = React.createElement("h2",{class:"heading2"},"heading2")
-    const container1 = React.createElement("div",{class:"container1"},React.createElement("h1",{class:"heading1"},"heading1"))
-    console.log(container1);         //not necessary in environment 
-    const container2 = React.createElement("div",{class:"container2"},React.createElement("h2",{class:"heading2"},"heading2"))
-    const rootElement = ReactDOM.createRoot(root)
-    rootElement.render([container1,container2])    // converted into html works as render 
+    </div>   
+
+    
+<script type="module" src="app.js">
 
 </script>
     
